@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 
+import Navbar from './components/layout/Navbar';
+
 function App() {
-  return (
-    <div>
-        <h1>Kam's Site</h1>
-    </div>
-  );
+    return (
+        <div className='container'>
+            <Navbar />
+        </div>
+    );
 }
 
 export default App;
