@@ -3,6 +3,7 @@
 :root {
     --pink: #ff7ea5;
     --green: #13a412;
+    --yellow: #fed603;
 }
 
 * {
@@ -43,4 +44,30 @@ body {
 .nav-links ul li a {
     color: var(--green);
     font-size: 1.5rem;
+}
+
+/* Home Header */
+.home-header {
+    width: 100%;
+    padding: 0 0.5em;
+    margin-top: 5rem;
+    color: var(--pink);
+}
+
+.home-header h1 {
+    font-size: 10rem;
+    height: 125px;
+    font-weight: 400;
+}
+
+.home-header h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.home-header a {
+    color: var(--yellow);
+    font-size: 2rem;
+    margin-left: 3em;
 }
