@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Header from '../components/home/Header';
-import Images from '../components/home/Images';
+import BackgroundImages from '../components/home/BackgroundImages';
 
 const Home = () => {
     return (
         <>
             <Header />
-            <Images />
+            <BackgroundImages />
         </>
     );
 };

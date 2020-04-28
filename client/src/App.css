@@ -11,6 +11,7 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* Layout */
@@ -52,12 +53,15 @@ body {
     padding: 0 0.5em;
     margin-top: 5rem;
     color: var(--pink);
+    position: relative;
+    z-index: 2;
 }
 
 .home-header h1 {
     font-size: 10rem;
-    height: 125px;
     font-weight: 400;
+    position: relative;
+    top: 60px;
 }
 
 .home-header h2 {
@@ -70,4 +74,11 @@ body {
     color: var(--yellow);
     font-size: 2rem;
     margin-left: 3em;
+}
+
+/* Background Images */
+
+.green-paint {
+    position: absolute;
+    bottom: 0;
 }
