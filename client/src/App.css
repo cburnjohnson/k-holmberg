@@ -44,3 +44,21 @@ body {
     font-size: 2rem;
     color: var(--green);
 }
+
+/* Home Header */
+.home-header {
+    width: 1186px;
+    margin: 0 auto;
+    margin-top: 1em;
+    color: var(--pink);
+}
+
+.home-header h1 {
+    font-size: 18rem;
+    height: 250px;
+}
+
+.home-header h2 {
+    font-size: 8rem;
+    font-family: 'Pacifico', cursive;
+}
