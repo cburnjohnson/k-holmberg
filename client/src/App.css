@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 4em;
+    padding: 0.5em 1.5em;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -32,8 +32,8 @@ body {
 }
 
 .nav-brand a {
+    font-size: 1.75rem;
     color: var(--pink);
-    font-size: 3rem;
 }
 
 .nav-links ul {
@@ -41,24 +41,6 @@ body {
 }
 
 .nav-links ul li a {
-    font-size: 2rem;
     color: var(--green);
-}
-
-/* Home Header */
-.home-header {
-    width: 1186px;
-    margin: 0 auto;
-    margin-top: 1em;
-    color: var(--pink);
-}
-
-.home-header h1 {
-    font-size: 18rem;
-    height: 250px;
-}
-
-.home-header h2 {
-    font-size: 8rem;
-    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
 }
