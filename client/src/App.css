@@ -77,8 +77,24 @@ body {
 }
 
 /* Background Images */
-
-.green-paint {
+.paint-bg {
     position: absolute;
-    bottom: 0;
+    bottom: -250px;
+    left: -50px;
+}
+
+.paint-bg.blue {
+    left: 50px;
+}
+
+.paint-bg.green {
+    left: 150px;
+}
+
+.paint-bg.yellow {
+    left: 250px;
+}
+
+.paint-bg.red {
+    left: 350px;
 }
