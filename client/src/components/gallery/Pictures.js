@@ -1,9 +1,10 @@
 import React from 'react';
+import Picture from './Picture';
 
 const Pictures = () => {
     return (
-        <div>
-            <h2>Pictures here</h2>
+        <div className='picture-carousel'>
+            <Picture />
         </div>
     );
 };
