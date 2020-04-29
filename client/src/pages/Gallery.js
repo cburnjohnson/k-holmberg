@@ -7,12 +7,11 @@ const Gallery = () => {
     return (
         <div className='gallery'>
             <h1>
-                <span className='blue'>G</span>{' '}
-                <span className='purple'>A</span>{' '}
+                <span className='purple'>G</span>{' '}
+                <span className='blue'>A</span> <span className='green'>L</span>{' '}
                 <span className='green'>L</span>{' '}
-                <span className='green'>L</span> <span className='red'>E</span>{' '}
-                <span className='orange'>R</span>{' '}
-                <span className='yellow'>Y</span>
+                <span className='yellow'>E</span>{' '}
+                <span className='orange'>R</span> <span className='red'>Y</span>
             </h1>
             <Pictures />
             <BackgroundImages />
