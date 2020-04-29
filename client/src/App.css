@@ -4,6 +4,10 @@
     --pink: #ff7ea5;
     --green: #13a412;
     --yellow: #fed603;
+    --red: #e50f2f;
+    --purple: #4b3e9a;
+    --blue: #024cc1;
+    --orange: #f45a09;
 }
 
 * {
@@ -17,6 +21,53 @@
 /* Layout */
 body {
     background-color: #312f2f;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.purple {
+    color: var(--purple);
+}
+
+.green {
+    color: var(--green);
+}
+
+.red {
+    color: var(--red);
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+/* Background Images */
+.paint-bg {
+    position: absolute;
+    bottom: -250px;
+    left: -50px;
+}
+
+.paint-bg.blue {
+    left: 50px;
+}
+
+.paint-bg.green {
+    left: 150px;
+}
+
+.paint-bg.yellow {
+    left: 250px;
+}
+
+.paint-bg.red {
+    left: 350px;
 }
 
 /* Navbar */
@@ -84,25 +135,9 @@ h2.header-art {
     left: 10px;
 }
 
-/* Background Images */
-.paint-bg {
-    position: absolute;
-    bottom: -250px;
-    left: -50px;
-}
-
-.paint-bg.blue {
-    left: 50px;
-}
-
-.paint-bg.green {
-    left: 150px;
-}
-
-.paint-bg.yellow {
-    left: 250px;
-}
-
-.paint-bg.red {
-    left: 350px;
+/* Gallery */
+.gallery h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    margin-top: 1rem;
 }
