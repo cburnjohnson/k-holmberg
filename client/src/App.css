@@ -48,7 +48,7 @@ body {
 }
 
 /* Home Header */
-.home-header {
+.header-home {
     width: 100%;
     padding: 0 1.5em;
     margin-top: 5rem;
@@ -57,23 +57,31 @@ body {
     z-index: 2;
 }
 
-.home-header h1 {
+.header-home h1 {
     font-size: 10rem;
     font-weight: 400;
     position: relative;
     top: 60px;
 }
 
-.home-header h2 {
+.header-home h2 {
     font-family: 'Pacifico', cursive;
     font-size: 5rem;
     font-weight: 400;
 }
 
-.home-header a {
+h2.header-art {
+    font-size: 8rem;
+    color: #312f2f;
+    text-transform: uppercase;
+}
+
+.header-home a {
     color: var(--yellow);
     font-size: 2rem;
-    margin-left: 3em;
+    position: relative;
+    top: -40px;
+    left: 10px;
 }
 
 /* Background Images */
