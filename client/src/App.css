@@ -183,4 +183,10 @@ h2.header-art {
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.picture-button:hover {
+    color: #c4c4c4;
+    background-color: var(--pink);
 }
