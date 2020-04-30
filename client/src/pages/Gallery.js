@@ -2,7 +2,7 @@ import React from 'react';
 
 import BackgroundImages from '../components/layout/BackgroundImages';
 import Pictures from '../components/gallery/Pictures';
-import Cart from '../components/gallery/Cart';
+import Cart from '../components/cart/Cart';
 
 const Gallery = () => {
     return (
