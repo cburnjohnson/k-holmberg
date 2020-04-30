@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
-const Picture = () => {
+const Picture = ({ picture }) => {
+    const { src } = picture;
     return (
-        <div>
-            <h1>picture</h1>
+        <div className='picture-container'>
+            <img src={src} alt='' />
         </div>
     );
 };

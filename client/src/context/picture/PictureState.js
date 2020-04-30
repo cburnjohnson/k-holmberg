@@ -2,9 +2,11 @@ import React, { useReducer } from 'react';
 import PictureContext from './pictureContext';
 import pictureReducer from './pictureReducer';
 
+import TestPicture from '../../images/test-picture.jpg';
+
 const PictureState = (props) => {
     const initialState = {
-        pictures: [],
+        pictures: [{ id: 1, src: TestPicture }],
     };
 
     const [state, dispatch] = useReducer(pictureReducer, initialState);
