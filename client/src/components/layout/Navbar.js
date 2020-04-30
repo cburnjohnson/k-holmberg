@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    console.log(window.location.pathname);
-
     const [pathname, setPathname] = useState(window.location.pathname);
 
     const homeLinks = (
