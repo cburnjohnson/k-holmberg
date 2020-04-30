@@ -146,3 +146,41 @@ h2.header-art {
     text-align: center;
     margin-top: 1rem;
 }
+
+.picture-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 3;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.picture-container img {
+    max-width: 100%;
+}
+
+.picture-price {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 2.5rem;
+}
+
+.picture-button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    margin: 0 auto;
+    width: 60%;
+    padding: 0.5rem 2rem;
+    border: none;
+    text-transform: uppercase;
+    color: var(--pink);
+    background-color: #c4c4c4;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
