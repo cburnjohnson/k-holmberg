@@ -200,3 +200,46 @@ h2.header-art {
     color: #c4c4c4;
     background-color: var(--pink);
 }
+
+/* Cart */
+#cart {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 80%;
+    background-color: #fff;
+    z-index: 5;
+}
+
+#cart h1 {
+    font-family: 'Pacifico', cursive;
+    text-transform: uppercase;
+    color: var(--pink);
+    font-size: 5rem;
+    position: relative;
+    top: -40px;
+}
+
+#cart-button {
+    width: 80%;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    border: none;
+    background-color: var(--pink);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding: 0.3rem 0;
+    position: absolute;
+    bottom: 1rem;
+    cursor: pointer;
+    border: 10px solid var(--pink);
+    transition: ease 0.3s;
+    border-radius: 20px;
+}
+
+#cart-button:hover {
+    border: 10px solid var(--yellow);
+}

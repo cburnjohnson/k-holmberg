@@ -2,6 +2,7 @@ import React from 'react';
 
 import BackgroundImages from '../components/layout/BackgroundImages';
 import Pictures from '../components/gallery/Pictures';
+import Cart from '../components/gallery/Cart';
 
 const Gallery = () => {
     return (
@@ -15,6 +16,7 @@ const Gallery = () => {
             </h1>
             <Pictures />
             <BackgroundImages />
+            <Cart />
         </div>
     );
 };
