@@ -16,7 +16,7 @@ const Navbar = () => {
 
     const galleryLinks = (
         <>
-            <button>Cart</button>
+            <button className='nav-cart'>Cart(1)</button>
         </>
     );
 

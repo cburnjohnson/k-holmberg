@@ -98,6 +98,16 @@ body {
     font-size: 1.5rem;
 }
 
+.nav-cart {
+    color: var(--green);
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 /* Home Header */
 .header-home {
     width: 100%;
@@ -144,7 +154,7 @@ h2.header-art {
 .gallery h1 {
     font-size: 4.5rem;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .picture-container {
