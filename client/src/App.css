@@ -135,6 +135,11 @@ h2.header-art {
     left: 10px;
 }
 
+.header-sub {
+    position: relative;
+    top: -25px;
+}
+
 /* Gallery */
 .gallery h1 {
     font-size: 4.5rem;
