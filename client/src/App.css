@@ -286,4 +286,6 @@ h2.header-art {
     text-transform: uppercase;
     margin-top: 3rem;
     font-weight: bold;
+    border-top: 1px solid var(--pink);
+    border-bottom: 1px solid var(--pink);
 }
