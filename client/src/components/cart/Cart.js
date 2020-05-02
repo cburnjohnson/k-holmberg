@@ -8,7 +8,11 @@ const Cart = () => {
 
     return (
         <div id='cart'>
-            <h1>C a r t</h1>
+            <div className='cart-header'>
+                <h1>C a r t</h1>
+                <i class='far fa-times-circle'></i>
+            </div>
+
             <div id='cartItems'>
                 {cartItems &&
                     cartItems.map((cartItem) => (
