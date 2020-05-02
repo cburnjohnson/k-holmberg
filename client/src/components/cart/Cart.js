@@ -16,10 +16,11 @@ const Cart = () => {
                     ))}
             </div>
             <div id='cartTotal'>
+                <h2>Total</h2>
                 {cartItems.length > 0
-                    ? cartItems.reduce((total, item) => {
+                    ? `$${cartItems.reduce((total, item) => {
                           return total + item.price;
-                      }, 0)
+                      }, 0)}`
                     : '0'}
             </div>
             <button id='cart-button'>Checkout</button>
