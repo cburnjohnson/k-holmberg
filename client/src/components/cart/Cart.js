@@ -9,7 +9,12 @@ const Cart = () => {
     return (
         <div id='cart'>
             <div className='cart-header'>
-                <h1>C a r t</h1>
+                <h1>
+                    <span className='green'>C</span>{' '}
+                    <span className='blue'>a</span>{' '}
+                    <span className='yellow'>r</span>{' '}
+                    <span className='orange'>t</span>
+                </h1>
                 <i class='far fa-times-circle'></i>
             </div>
 
@@ -20,11 +25,18 @@ const Cart = () => {
                     ))}
             </div>
             <div id='cartTotal'>
-                <h2>Total</h2>
+                <h2>
+                    <span className='orange'>T</span>
+                    <span className='purple'>o</span>
+                    <span className='orange'>t</span>
+                    <span className='blue'>a</span>
+                    <span className='yellow'>l</span>
+                </h2>
+                <span className='green'>$</span>
                 {cartItems.length > 0
-                    ? `$${cartItems.reduce((total, item) => {
+                    ? cartItems.reduce((total, item) => {
                           return total + item.price;
-                      }, 0)}`
+                      }, 0)
                     : '0'}
             </div>
             <button id='cart-button'>Checkout</button>

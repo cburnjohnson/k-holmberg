@@ -212,18 +212,17 @@ h2.header-art {
     z-index: 5;
 }
 
-#cart h1 {
+#cart h1 span {
     font-family: 'Pacifico', cursive;
     text-transform: uppercase;
-    color: var(--pink);
     font-size: 5rem;
     position: relative;
-    top: -40px;
+    top: -20px;
 }
 
 .cart-header i {
     position: absolute;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--red);
     top: 10px;
     left: 10px;
@@ -254,7 +253,7 @@ h2.header-art {
 }
 
 #cartItems {
-    height: 44%;
+    height: 48%;
     overflow-y: auto;
 }
 
@@ -286,8 +285,5 @@ h2.header-art {
     text-align: center;
     text-transform: uppercase;
     margin-top: 3rem;
-}
-
-#cartTotal h2 {
-    text-decoration: underline;
+    font-weight: bold;
 }
