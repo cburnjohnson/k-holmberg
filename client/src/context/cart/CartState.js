@@ -7,13 +7,13 @@ import TestPicture from '../../images/test-picture.jpg';
 const CartState = (props) => {
     const initialState = {
         cartItems: [
-            { id: 1, src: TestPicture, alt: 'test', price: '$10' },
-            { id: 2, src: TestPicture, alt: 'test', price: '$10' },
-            { id: 3, src: TestPicture, alt: 'test', price: '$10' },
-            { id: 3, src: TestPicture, alt: 'test', price: '$10' },
-            { id: 3, src: TestPicture, alt: 'test', price: '$10' },
-            { id: 3, src: TestPicture, alt: 'test', price: '$10' },
-            { id: 3, src: TestPicture, alt: 'test', price: '$10' },
+            { id: 1, src: TestPicture, alt: 'test', price: 10 },
+            { id: 2, src: TestPicture, alt: 'test', price: 10 },
+            { id: 3, src: TestPicture, alt: 'test', price: 10 },
+            { id: 3, src: TestPicture, alt: 'test', price: 10 },
+            { id: 3, src: TestPicture, alt: 'test', price: 10 },
+            { id: 3, src: TestPicture, alt: 'test', price: 10 },
+            { id: 3, src: TestPicture, alt: 'test', price: 10 },
         ],
     };
 

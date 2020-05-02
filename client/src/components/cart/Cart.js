@@ -15,6 +15,13 @@ const Cart = () => {
                         <CartItem cartItem={cartItem} key={cartItem.id} />
                     ))}
             </div>
+            <div id='cartTotal'>
+                {cartItems.length > 0
+                    ? cartItems.reduce((total, item) => {
+                          return total + item.price;
+                      }, 0)
+                    : '0'}
+            </div>
             <button id='cart-button'>Checkout</button>
         </div>
     );
