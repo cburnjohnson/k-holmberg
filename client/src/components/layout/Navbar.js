@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
+import CartContext from '../../context/cart/cartContext';
 
 const Navbar = () => {
+    const { cartItems } = useContext(CartContext);
+
     const [pathname, setPathname] = useState(window.location.pathname);
 
     const homeLinks = (
@@ -14,7 +17,7 @@ const Navbar = () => {
 
     const galleryLinks = (
         <>
-            <button className='nav-cart'>Cart(0)</button>
+            <button className='nav-cart'>Cart({cartItems.length})</button>
         </>
     );
 
