@@ -210,6 +210,7 @@ h2.header-art {
     width: 80%;
     background-color: #fff;
     z-index: 5;
+    display: none;
 }
 
 #cart h1 span {
