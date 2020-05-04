@@ -21,7 +21,7 @@ const Gallery = () => {
 
             <BackgroundImages />
 
-            {isOpen && <Cart />}
+            <Cart />
         </div>
     );
 };

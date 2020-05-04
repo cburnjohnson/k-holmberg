@@ -4,10 +4,10 @@ import CartContext from '../../context/cart/cartContext';
 import CartItem from './CartItem';
 
 const Cart = () => {
-    const { cartItems, closeCart } = useContext(CartContext);
+    const { cartItems, closeCart, isOpen } = useContext(CartContext);
 
     return (
-        <div id='cart'>
+        <div id='cart' className={isOpen === true ? 'isOpen' : 'isClosed'}>
             <div className='cart-header'>
                 <h1>
                     <span className='green'>C</span>{' '}
