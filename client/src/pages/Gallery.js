@@ -1,13 +1,10 @@
-import React, { useContext } from 'react';
-import CartContext from '../context/cart/cartContext';
+import React from 'react';
 
 import BackgroundImages from '../components/layout/BackgroundImages';
 import Pictures from '../components/gallery/Pictures';
 import Cart from '../components/cart/Cart';
 
 const Gallery = () => {
-    const { isOpen } = useContext(CartContext);
-
     return (
         <div className='gallery'>
             <h1>
@@ -18,9 +15,7 @@ const Gallery = () => {
                 <span className='orange'>R</span> <span className='red'>Y</span>
             </h1>
             <Pictures />
-
             <BackgroundImages />
-
             <Cart />
         </div>
     );
