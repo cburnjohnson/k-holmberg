@@ -4,6 +4,8 @@ import cartReducer from './cartReducer';
 
 import TestPicture from '../../images/test-picture.jpg';
 
+import { OPEN_CART } from '../types';
+
 const CartState = (props) => {
     const initialState = {
         cartItems: [
@@ -14,12 +16,23 @@ const CartState = (props) => {
             { id: 5, src: TestPicture, alt: 'test', price: 10 },
             { id: 6, src: TestPicture, alt: 'test', price: 55 },
         ],
+        isOpen: false,
     };
 
     const [state, dispatch] = useReducer(cartReducer, initialState);
 
+    const openCart = () => {
+        dispatch({ type: OPEN_CART });
+    };
+
     return (
-        <CartContext.Provider value={{ cartItems: state.cartItems }}>
+        <CartContext.Provider
+            value={{
+                cartItems: state.cartItems,
+                isOpen: state.isOpen,
+                openCart,
+            }}
+        >
             {props.children}
         </CartContext.Provider>
     );

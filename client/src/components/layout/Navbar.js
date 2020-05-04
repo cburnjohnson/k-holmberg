@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import CartContext from '../../context/cart/cartContext';
 
 const Navbar = () => {
-    const { cartItems } = useContext(CartContext);
+    const { cartItems, openCart } = useContext(CartContext);
 
     const [pathname, setPathname] = useState(window.location.pathname);
 
@@ -17,7 +17,9 @@ const Navbar = () => {
 
     const galleryLinks = (
         <>
-            <button className='nav-cart'>Cart({cartItems.length})</button>
+            <button className='nav-cart' onClick={openCart}>
+                Cart({cartItems.length})
+            </button>
         </>
     );
 
