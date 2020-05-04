@@ -4,7 +4,7 @@ import CartContext from '../../context/cart/cartContext';
 import CartItem from './CartItem';
 
 const Cart = () => {
-    const { cartItems } = useContext(CartContext);
+    const { cartItems, closeCart } = useContext(CartContext);
 
     return (
         <div id='cart'>
@@ -15,7 +15,7 @@ const Cart = () => {
                     <span className='yellow'>r</span>{' '}
                     <span className='orange'>t</span>
                 </h1>
-                <i class='far fa-times-circle'></i>
+                <i class='far fa-times-circle' onClick={closeCart}></i>
             </div>
 
             <div id='cartItems'>

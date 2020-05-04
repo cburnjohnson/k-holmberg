@@ -4,7 +4,7 @@ import cartReducer from './cartReducer';
 
 import TestPicture from '../../images/test-picture.jpg';
 
-import { OPEN_CART } from '../types';
+import { OPEN_CART, CLOSE_CART } from '../types';
 
 const CartState = (props) => {
     const initialState = {
@@ -25,12 +25,17 @@ const CartState = (props) => {
         dispatch({ type: OPEN_CART });
     };
 
+    const closeCart = () => {
+        dispatch({ type: CLOSE_CART });
+    };
+
     return (
         <CartContext.Provider
             value={{
                 cartItems: state.cartItems,
                 isOpen: state.isOpen,
                 openCart,
+                closeCart,
             }}
         >
             {props.children}

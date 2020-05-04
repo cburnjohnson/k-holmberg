@@ -1,4 +1,4 @@
-import { OPEN_CART } from '../types';
+import { OPEN_CART, CLOSE_CART } from '../types';
 
 export default (state, action) => {
     switch (action.type) {
@@ -6,6 +6,11 @@ export default (state, action) => {
             return {
                 ...state,
                 isOpen: true,
+            };
+        case CLOSE_CART:
+            return {
+                ...state,
+                isOpen: false,
             };
         default:
             return state;
