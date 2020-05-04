@@ -47,6 +47,21 @@ body {
     color: var(--yellow);
 }
 
+#overlay {
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    width: 20%;
+    top: 0;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+#overlay.show {
+    opacity: 0.5;
+}
+
 /* Background Images */
 .paint-bg {
     position: absolute;

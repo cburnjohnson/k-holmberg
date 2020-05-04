@@ -1,6 +1,7 @@
 import React from 'react';
 
 import BackgroundImages from '../components/layout/BackgroundImages';
+import Overlay from '../components/layout/Overlay';
 import Pictures from '../components/gallery/Pictures';
 import Cart from '../components/cart/Cart';
 
@@ -17,6 +18,7 @@ const Gallery = () => {
             <Pictures />
             <BackgroundImages />
             <Cart />
+            <Overlay />
         </div>
     );
 };
