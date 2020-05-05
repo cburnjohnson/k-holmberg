@@ -1,4 +1,9 @@
-import { OPEN_CART, CLOSE_CART, ADD_CART_ITEM } from '../types';
+import {
+    OPEN_CART,
+    CLOSE_CART,
+    ADD_CART_ITEM,
+    REMOVE_CART_ITEM,
+} from '../types';
 
 export default (state, action) => {
     switch (action.type) {
@@ -6,6 +11,13 @@ export default (state, action) => {
             return {
                 ...state,
                 cartItems: [action.payload, ...state.cartItems],
+            };
+        case REMOVE_CART_ITEM:
+            return {
+                ...state,
+                cartItems: state.cartItems.filter(
+                    (cartItem) => cartItem.id !== action.payload
+                ),
             };
         case OPEN_CART:
             return {

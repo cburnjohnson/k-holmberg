@@ -2,9 +2,12 @@ import React, { useReducer } from 'react';
 import CartContext from './cartContext';
 import cartReducer from './cartReducer';
 
-import TestPicture from '../../images/test-picture.jpg';
-
-import { OPEN_CART, CLOSE_CART, ADD_CART_ITEM } from '../types';
+import {
+    OPEN_CART,
+    CLOSE_CART,
+    ADD_CART_ITEM,
+    REMOVE_CART_ITEM,
+} from '../types';
 
 const CartState = (props) => {
     const initialState = {
@@ -16,6 +19,10 @@ const CartState = (props) => {
 
     const addCartItem = (picture) => {
         dispatch({ type: ADD_CART_ITEM, payload: picture });
+    };
+
+    const removeCartItem = (cartItemId) => {
+        dispatch({ type: REMOVE_CART_ITEM, payload: cartItemId });
     };
 
     const openCart = () => {
@@ -34,6 +41,7 @@ const CartState = (props) => {
                 openCart,
                 closeCart,
                 addCartItem,
+                removeCartItem,
             }}
         >
             {props.children}
