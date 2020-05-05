@@ -4,22 +4,19 @@ import cartReducer from './cartReducer';
 
 import TestPicture from '../../images/test-picture.jpg';
 
-import { OPEN_CART, CLOSE_CART } from '../types';
+import { OPEN_CART, CLOSE_CART, ADD_CART_ITEM } from '../types';
 
 const CartState = (props) => {
     const initialState = {
-        cartItems: [
-            { id: 1, src: TestPicture, alt: 'test', price: 10 },
-            { id: 2, src: TestPicture, alt: 'test', price: 10 },
-            { id: 3, src: TestPicture, alt: 'test', price: 10 },
-            { id: 4, src: TestPicture, alt: 'test', price: 10 },
-            { id: 5, src: TestPicture, alt: 'test', price: 10 },
-            { id: 6, src: TestPicture, alt: 'test', price: 55 },
-        ],
+        cartItems: [],
         isOpen: false,
     };
 
     const [state, dispatch] = useReducer(cartReducer, initialState);
+
+    const addCartItem = (picture) => {
+        dispatch({ type: ADD_CART_ITEM, payload: picture });
+    };
 
     const openCart = () => {
         dispatch({ type: OPEN_CART });
@@ -36,6 +33,7 @@ const CartState = (props) => {
                 isOpen: state.isOpen,
                 openCart,
                 closeCart,
+                addCartItem,
             }}
         >
             {props.children}
