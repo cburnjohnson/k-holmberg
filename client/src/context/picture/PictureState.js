@@ -6,7 +6,10 @@ import TestPicture from '../../images/test-picture.jpg';
 
 const PictureState = (props) => {
     const initialState = {
-        pictures: [{ id: 1, src: TestPicture, alt: 'test', price: 10 }],
+        pictures: [
+            { id: 1, src: TestPicture, alt: 'test', price: 10 },
+            { id: 2, src: TestPicture, alt: 'test', price: 10 },
+        ],
     };
 
     const [state, dispatch] = useReducer(pictureReducer, initialState);
