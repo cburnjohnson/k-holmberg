@@ -185,11 +185,11 @@ h2.header-art {
 .carousel-pictures {
     animation: scroll 40s linear infinite;
     display: flex;
-    width: calc(250px * 14);
+    width: 100%;
 }
 
 .picture-container {
-    width: 10%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 2rem;
     position: relative;
