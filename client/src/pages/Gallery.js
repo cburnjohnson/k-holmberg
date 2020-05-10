@@ -2,7 +2,7 @@ import React from 'react';
 
 import BackgroundImages from '../components/layout/BackgroundImages';
 import Overlay from '../components/layout/Overlay';
-import Pictures from '../components/gallery/Pictures';
+import Carousel from '../components/gallery/Carousel';
 import Cart from '../components/cart/Cart';
 
 const Gallery = () => {
@@ -15,7 +15,7 @@ const Gallery = () => {
                 <span className='yellow'>E</span>{' '}
                 <span className='orange'>R</span> <span className='red'>Y</span>
             </h1>
-            <Pictures />
+            <Carousel />
             <BackgroundImages />
             <Cart />
             <Overlay />
