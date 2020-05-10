@@ -7,9 +7,11 @@ const Carousel = () => {
 
     return (
         <div className='picture-carousel'>
-            {pictures.map((picture) => (
-                <Picture picture={picture} key={picture.id} />
-            ))}
+            <div className='carousel-pictures'>
+                {pictures.map((picture) => (
+                    <Picture picture={picture} key={picture.id} />
+                ))}
+            </div>
         </div>
     );
 };
