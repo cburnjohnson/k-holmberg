@@ -8,6 +8,9 @@
     --purple: #4b3e9a;
     --blue: #024cc1;
     --orange: #f45a09;
+    --green-hover: #047004;
+    --yellow-hover: #b99c08;
+    --pink-hover: #cf6a88;
 }
 
 * {
@@ -104,6 +107,11 @@ body {
 .nav-brand a {
     font-size: 1.75rem;
     color: var(--pink);
+    transition: 0.3s;
+}
+
+.nav-brand a:hover {
+    color: var(--pink-hover);
 }
 
 .nav-links ul {
@@ -113,6 +121,11 @@ body {
 .nav-links ul li a {
     color: var(--green);
     font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.nav-links ul li a:hover {
+    color: var(--green-hover);
 }
 
 .nav-cart {
@@ -160,6 +173,11 @@ h2.header-art {
     position: relative;
     top: -40px;
     left: 10px;
+    transition: 0.3s;
+}
+
+.header-home a:hover {
+    color: var(--yellow-hover);
 }
 
 .header-sub {
