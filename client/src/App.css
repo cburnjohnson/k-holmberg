@@ -183,9 +183,18 @@ h2.header-art {
 }
 
 .carousel-pictures {
-    animation: scroll 40s linear infinite;
+    animation: scroll 10s linear infinite;
     display: flex;
     width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 .picture-container {
@@ -231,17 +240,6 @@ h2.header-art {
     background-color: var(--pink);
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}
 /* Cart */
 #cart {
     position: absolute;
