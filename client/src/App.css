@@ -197,13 +197,13 @@ h2.header-art {
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 960px;
+    width: 100%;
 }
 
 .carousel-pictures {
     animation: scroll 30s linear infinite;
     display: flex;
-    width: 100%;
+    width: 200%;
 }
 
 @keyframes scroll {
