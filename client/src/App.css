@@ -211,7 +211,7 @@ h2.header-art {
         transform: translateX(-100%);
     }
     100% {
-        transform: translateX(100%);
+        transform: translateX(50%);
     }
 }
 
