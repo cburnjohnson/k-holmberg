@@ -11,6 +11,7 @@
     --green-hover: #047004;
     --yellow-hover: #b99c08;
     --pink-hover: #cf6a88;
+    --red-hover: #b80c26;
 }
 
 * {
@@ -139,6 +140,11 @@ body {
     font-weight: bold;
     font-size: 1.5rem;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-cart:hover {
+    color: var(--green-hover);
 }
 
 /* Home Header */
@@ -351,4 +357,12 @@ h2.header-art {
     font-weight: bold;
     border-top: 1px solid var(--pink);
     border-bottom: 1px solid var(--pink);
+}
+
+.close-cart {
+    transition: 0.3s;
+}
+
+.close-cart:hover {
+    color: var(--red-hover);
 }

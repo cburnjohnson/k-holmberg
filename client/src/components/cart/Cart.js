@@ -15,7 +15,10 @@ const Cart = () => {
                     <span className='yellow'>r</span>{' '}
                     <span className='orange'>t</span>
                 </h1>
-                <i className='far fa-times-circle' onClick={closeCart}></i>
+                <i
+                    className='far fa-times-circle close-cart'
+                    onClick={closeCart}
+                ></i>
             </div>
 
             <div id='cartItems'>
