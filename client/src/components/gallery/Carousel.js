@@ -7,7 +7,10 @@ const Carousel = () => {
 
     return (
         <div className='picture-carousel'>
-            <div className='carousel-pictures'>
+            <div
+                className='carousel-pictures'
+                style={{ width: `${pictures.length}00%` }}
+            >
                 {pictures.map((picture) => (
                     <Picture picture={picture} key={picture.id} />
                 ))}
