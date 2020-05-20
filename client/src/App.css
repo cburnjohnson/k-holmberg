@@ -203,7 +203,6 @@ h2.header-art {
 .carousel-pictures {
     animation: scroll 30s linear infinite;
     display: flex;
-    width: 300%;
 }
 
 @keyframes scroll {
