@@ -24,6 +24,9 @@
 /* Layout */
 body {
     background-color: #312f2f;
+    height: 100vh;
+    overflow-y: hidden;
+    position: relative;
 }
 
 .blue {
@@ -345,7 +348,6 @@ h2.header-art {
     font-size: 2.5rem;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 3rem;
     font-weight: bold;
     border-top: 1px solid var(--pink);
     border-bottom: 1px solid var(--pink);
