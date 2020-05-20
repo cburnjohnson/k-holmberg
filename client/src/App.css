@@ -192,7 +192,20 @@ body {
 h2.header-art {
     font-size: 8rem;
     color: #312f2f;
+    opacity: 0;
     text-transform: uppercase;
+    animation: fadeInHeader 1s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .header-home a {
