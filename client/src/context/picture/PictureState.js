@@ -7,9 +7,27 @@ import TestPicture from '../../images/test-picture.jpg';
 const PictureState = (props) => {
     const initialState = {
         pictures: [
-            { id: 1, src: TestPicture, alt: 'test', price: 10 },
-            { id: 2, src: TestPicture, alt: 'test', price: 10 },
-            { id: 3, src: TestPicture, alt: 'test', price: 30 },
+            {
+                id: 1,
+                src: TestPicture,
+                alt: 'test',
+                dimensions: '10x8',
+                price: 10,
+            },
+            {
+                id: 2,
+                src: TestPicture,
+                alt: 'test',
+                dimensions: '10x8',
+                price: 10,
+            },
+            {
+                id: 3,
+                src: TestPicture,
+                alt: 'test',
+                dimensions: '10x8',
+                price: 30,
+            },
         ],
     };
 
