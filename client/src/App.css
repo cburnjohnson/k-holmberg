@@ -73,25 +73,62 @@ body {
 /* Background Images */
 .paint-bg {
     position: absolute;
-    bottom: -250px;
     left: -50px;
+    bottom: -250px;
     z-index: -1;
+}
+
+.paint-bg.purple {
+    -webkit-animation: paint 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: paint 2s; /* Firefox < 16 */
+    -ms-animation: paint 2s; /* Internet Explorer */
+    -o-animation: paint 2s; /* Opera < 12.1 */
+    animation: paint 2s;
 }
 
 .paint-bg.blue {
     left: 50px;
+    -webkit-animation: paint 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: paint 2s; /* Firefox < 16 */
+    -ms-animation: paint 2s; /* Internet Explorer */
+    -o-animation: paint 2s; /* Opera < 12.1 */
+    animation: paint 3s;
 }
 
 .paint-bg.green {
     left: 150px;
+    -webkit-animation: paint 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: paint 2s; /* Firefox < 16 */
+    -ms-animation: paint 2s; /* Internet Explorer */
+    -o-animation: paint 2s; /* Opera < 12.1 */
+    animation: paint 4s;
 }
 
 .paint-bg.yellow {
     left: 250px;
+    -webkit-animation: paint 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: paint 2s; /* Firefox < 16 */
+    -ms-animation: paint 2s; /* Internet Explorer */
+    -o-animation: paint 2s; /* Opera < 12.1 */
+    animation: paint 5s;
 }
 
 .paint-bg.red {
     left: 350px;
+    -webkit-animation: paint 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: paint 2s; /* Firefox < 16 */
+    -ms-animation: paint 2s; /* Internet Explorer */
+    -o-animation: paint 2s; /* Opera < 12.1 */
+    animation: paint 6s;
+}
+
+@keyframes paint {
+    from {
+        bottom: -1000px;
+    }
+    to {
+        bottom: -250px;
+    }
 }
 
 /* Navbar */
