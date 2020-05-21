@@ -9,6 +9,7 @@ import Sunset from '../../images/paintings/sunset.jpg';
 import NightLights from '../../images/paintings/night-lights.jpg';
 import Wine from '../../images/paintings/wine.jpg';
 import Sunflower from '../../images/paintings/sunflower.jpg';
+import Jellyfish from '../../images/paintings/jellyfish.jpg';
 
 const PictureState = (props) => {
     const initialState = {
@@ -59,6 +60,13 @@ const PictureState = (props) => {
                 id: 7,
                 src: Sunflower,
                 alt: 'Sunflowers',
+                dimensions: '10x8',
+                price: 30,
+            },
+            {
+                id: 8,
+                src: Jellyfish,
+                alt: 'Jellyfish',
                 dimensions: '10x8',
                 price: 30,
             },
