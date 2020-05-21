@@ -2,12 +2,15 @@ import React, { useContext } from 'react';
 import CartContext from '../../context/cart/cartContext';
 
 const Picture = ({ picture }) => {
-    const { addCartItem } = useContext(CartContext);
+    const { addCartItem, cartItems } = useContext(CartContext);
 
     const { src, alt, price, dimensions } = picture;
 
     const onClick = () => {
-        addCartItem(picture);
+        const currentPictureIds = cartItems.map((cartItem) => cartItem.id);
+        if (!currentPictureIds.includes(picture.id)) {
+            addCartItem(picture);
+        }
     };
 
     return (

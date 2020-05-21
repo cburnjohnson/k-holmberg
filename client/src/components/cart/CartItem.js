@@ -4,7 +4,7 @@ import CartContext from '../../context/cart/cartContext';
 const CartItem = ({ cartItem }) => {
     const { removeCartItem } = useContext(CartContext);
 
-    const onClick = (cartItemId) => {
+    const onClick = () => {
         removeCartItem(cartItem.id);
     };
 
@@ -13,7 +13,7 @@ const CartItem = ({ cartItem }) => {
             <img src={cartItem.src} alt='' />
             <div className='cart-item-price'>${cartItem.price}</div>
             <div className='cart-item-remove'>
-                <i class='fas fa-trash-alt' onClick={onClick}></i>
+                <i className='fas fa-trash-alt' onClick={onClick}></i>
             </div>
         </div>
     );
