@@ -255,8 +255,9 @@ h2.header-art {
 }
 
 .carousel-pictures {
-    animation: scroll 30s linear infinite;
+    animation: scroll 40s linear infinite;
     display: flex;
+    align-items: center;
 }
 
 @keyframes scroll {
@@ -273,7 +274,6 @@ h2.header-art {
     margin: 2rem 1rem 0 1rem;
     position: relative;
     z-index: 3;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .picture-container img {
