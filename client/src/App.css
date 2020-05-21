@@ -90,32 +90,32 @@ body {
     left: -50px;
     bottom: -1250px;
     z-index: -1;
-    -webkit-animation: paint 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: paint 2s; /* Firefox < 16 */
-    -ms-animation: paint 2s; /* Internet Explorer */
-    -o-animation: paint 2s; /* Opera < 12.1 */
-    animation: paint 1s;
+    -webkit-animation: paint 0.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: paint 0.5s; /* Firefox < 16 */
+    -ms-animation: paint 0.5s; /* Internet Explorer */
+    -o-animation: paint 0.5s; /* Opera < 12.1 */
+    animation: paint 0.5s;
     animation-fill-mode: forwards;
 }
 
 .paint-bg.blue {
     left: 50px;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 .paint-bg.green {
     left: 150px;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .paint-bg.yellow {
     left: 250px;
-    animation-delay: 3s;
+    animation-delay: 1.5s;
 }
 
 .paint-bg.red {
     left: 350px;
-    animation-delay: 4s;
+    animation-delay: 2s;
 }
 
 @keyframes paint {
@@ -209,7 +209,7 @@ h2.header-art {
     opacity: 0;
     text-transform: uppercase;
     animation: fadeInHeader 1s;
-    animation-delay: 5s;
+    animation-delay: 2.5s;
     animation-fill-mode: forwards;
 }
 
