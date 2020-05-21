@@ -4,6 +4,7 @@ import pictureReducer from './pictureReducer';
 
 import RiverForrest from '../../images/paintings/river-forrest.png';
 import Dancer from '../../images/paintings/dancer.jpg';
+import MountainLake from '../../images/paintings/mountain-lake.jpg';
 
 const PictureState = (props) => {
     const initialState = {
@@ -19,6 +20,13 @@ const PictureState = (props) => {
                 id: 2,
                 src: Dancer,
                 alt: 'Dancer',
+                dimensions: '10x8',
+                price: 30,
+            },
+            {
+                id: 3,
+                src: MountainLake,
+                alt: 'Mountain Lake',
                 dimensions: '10x8',
                 price: 30,
             },
