@@ -6,6 +6,7 @@ import RiverForrest from '../../images/paintings/river-forrest.png';
 import Dancer from '../../images/paintings/dancer.jpg';
 import MountainLake from '../../images/paintings/mountain-lake.jpg';
 import Sunset from '../../images/paintings/sunset.jpg';
+import NightLights from '../../images/paintings/night-lights.jpg';
 
 const PictureState = (props) => {
     const initialState = {
@@ -35,6 +36,13 @@ const PictureState = (props) => {
                 id: 4,
                 src: Sunset,
                 alt: 'Sunset',
+                dimensions: '10x8',
+                price: 30,
+            },
+            {
+                id: 5,
+                src: NightLights,
+                alt: 'Night Lights',
                 dimensions: '10x8',
                 price: 30,
             },
