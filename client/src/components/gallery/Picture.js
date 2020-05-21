@@ -10,6 +10,8 @@ const Picture = ({ picture }) => {
         const currentPictureIds = cartItems.map((cartItem) => cartItem.id);
         if (!currentPictureIds.includes(picture.id)) {
             addCartItem(picture);
+        } else {
+            alert('You already have this picture in your cart.');
         }
     };
 
