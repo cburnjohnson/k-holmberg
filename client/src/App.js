@@ -8,6 +8,7 @@ import AlertState from './context/alert/AlertState';
 import Navbar from './components/layout/Navbar';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
+import Alerts from './components/layout/Alerts';
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                     <Router>
                         <div className='container'>
                             <Navbar />
+                            <Alerts />
                             <Switch>
                                 <Route exact path='/' component={Home} />
                                 <Route
