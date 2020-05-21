@@ -7,6 +7,7 @@ import Dancer from '../../images/paintings/dancer.jpg';
 import MountainLake from '../../images/paintings/mountain-lake.jpg';
 import Sunset from '../../images/paintings/sunset.jpg';
 import NightLights from '../../images/paintings/night-lights.jpg';
+import Wine from '../../images/paintings/wine.jpg';
 
 const PictureState = (props) => {
     const initialState = {
@@ -43,6 +44,13 @@ const PictureState = (props) => {
                 id: 5,
                 src: NightLights,
                 alt: 'Night Lights',
+                dimensions: '10x8',
+                price: 30,
+            },
+            {
+                id: 6,
+                src: Wine,
+                alt: 'But first wine',
                 dimensions: '10x8',
                 price: 30,
             },
