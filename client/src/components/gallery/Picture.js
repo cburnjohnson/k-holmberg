@@ -1,8 +1,10 @@
 import React, { useContext } from 'react';
 import CartContext from '../../context/cart/cartContext';
+import AlertContext from '../../context/alert/alertContext';
 
 const Picture = ({ picture }) => {
     const { addCartItem, cartItems } = useContext(CartContext);
+    const { setAlert } = useContext(AlertContext);
 
     const { src, alt, price, dimensions } = picture;
 
@@ -11,7 +13,7 @@ const Picture = ({ picture }) => {
         if (!currentPictureIds.includes(picture.id)) {
             addCartItem(picture);
         } else {
-            alert('You already have this picture in your cart.');
+            setAlert();
         }
     };
 
