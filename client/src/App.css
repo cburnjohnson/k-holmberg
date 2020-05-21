@@ -265,7 +265,7 @@ h2.header-art {
         transform: translateX(-100%);
     }
     100% {
-        transform: translateX(50%);
+        transform: translateX(25%);
     }
 }
 
@@ -274,6 +274,7 @@ h2.header-art {
     margin: 2rem 1rem 0 1rem;
     position: relative;
     z-index: 3;
+    color: #fff;
 }
 
 .picture-container img {
@@ -311,6 +312,7 @@ h2.header-art {
     border-radius: 10px;
     cursor: pointer;
     transition: all ease 0.3s;
+    opacity: 0.9;
 }
 
 .picture-button:hover {
