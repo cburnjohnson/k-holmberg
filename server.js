@@ -20,9 +20,9 @@ app.get('/', (req, res) => {
 });
 
 app.post('/payment', (req, res) => {
-    const { product, token } = req.body;
-    console.log('PRODUCT', product);
-    console.log('PRICE', product.price);
+    const { products, token, total } = req.body;
+    console.log('PRODUCT', products);
+    console.log('TOTAL', total);
 
     const idempotencyKey = v4();
 
@@ -34,17 +34,19 @@ app.post('/payment', (req, res) => {
         .then((customer) => {
             stripe.charges.create(
                 {
-                    amount: product.price * 100,
+                    amount: total,
                     currency: 'usd',
                     customer: customer.id,
                     receipt_email: token.email,
-                    description: `Purchase of ${product.name}`,
-                    shipping: {
-                        name: token.card.name,
-                        address: {
-                            country: token.card.address_country,
-                        },
-                    },
+                    description: `Purchase of ${products.map(
+                        (product) => product.alt
+                    )}`,
+                    // shipping: {
+                    //     name: token.card.name,
+                    //     address: {
+                    //         country: token.card.address_country,
+                    //     },
+                    // },
                 },
                 { idempotencyKey }
             );
