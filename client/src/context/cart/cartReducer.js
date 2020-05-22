@@ -3,6 +3,7 @@ import {
     CLOSE_CART,
     ADD_CART_ITEM,
     REMOVE_CART_ITEM,
+    CLEAR_CART,
 } from '../types';
 
 export default (state, action) => {
@@ -28,6 +29,11 @@ export default (state, action) => {
             return {
                 ...state,
                 isOpen: false,
+            };
+        case CLEAR_CART:
+            return {
+                ...state,
+                cartItems: [],
             };
         default:
             return state;

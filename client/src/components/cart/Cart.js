@@ -5,7 +5,7 @@ import CartItem from './CartItem';
 import StripeCheckout from 'react-stripe-checkout';
 
 const Cart = () => {
-    const { cartItems, closeCart, isOpen } = useContext(CartContext);
+    const { cartItems, closeCart, isOpen, clearCart } = useContext(CartContext);
 
     const makePayment = (token) => {
         const body = {
@@ -82,7 +82,9 @@ const Cart = () => {
                 }
                 shippingAddress
             >
-                <button id='cart-button'>Checkout</button>
+                <button id='cart-button' onClick={clearCart}>
+                    Checkout
+                </button>
             </StripeCheckout>
         </div>
     );

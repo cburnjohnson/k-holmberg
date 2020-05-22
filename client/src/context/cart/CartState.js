@@ -7,6 +7,7 @@ import {
     CLOSE_CART,
     ADD_CART_ITEM,
     REMOVE_CART_ITEM,
+    CLEAR_CART,
 } from '../types';
 
 const CartState = (props) => {
@@ -33,6 +34,10 @@ const CartState = (props) => {
         dispatch({ type: CLOSE_CART });
     };
 
+    const clearCart = () => {
+        dispatch({ type: CLEAR_CART });
+    };
+
     return (
         <CartContext.Provider
             value={{
@@ -42,6 +47,7 @@ const CartState = (props) => {
                 closeCart,
                 addCartItem,
                 removeCartItem,
+                clearCart,
             }}
         >
             {props.children}
