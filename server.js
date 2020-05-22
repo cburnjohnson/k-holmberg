@@ -3,7 +3,7 @@ const cors = require('cors');
 const express = require('express');
 const app = express();
 const { v4 } = require('uuid');
-
+// TODO: ADD SHIPPING/BILLING ADDRESS
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
@@ -25,6 +25,7 @@ app.post('/payment', (req, res) => {
     console.log('TOTAL', total);
 
     const idempotencyKey = v4();
+    console.log(token);
 
     return stripe.customers
         .create({
@@ -41,12 +42,17 @@ app.post('/payment', (req, res) => {
                     description: `Purchase of ${products.map(
                         (product) => product.alt
                     )}`,
-                    // shipping: {
-                    //     name: token.card.name,
-                    //     address: {
-                    //         country: token.card.address_country,
-                    //     },
-                    // },
+                    shipping: {
+                        name: token.card.name,
+                        address: {
+                            line1: token.card.address_line1,
+                            line2: token.card.address_line2,
+                            city: token.card.address_city,
+                            state: token.card.address_state,
+                            postal_code: token.card.address_zip,
+                            country: token.card.address_country,
+                        },
+                    },
                 },
                 { idempotencyKey }
             );

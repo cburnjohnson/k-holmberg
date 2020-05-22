@@ -80,8 +80,7 @@ const Cart = () => {
                         return total + item.price;
                     }, 0) * 100
                 }
-                // shippingAddress
-                // billingAddress
+                shippingAddress
             >
                 <button id='cart-button'>Checkout</button>
             </StripeCheckout>
