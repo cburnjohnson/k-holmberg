@@ -3,7 +3,7 @@ const cors = require('cors');
 const express = require('express');
 const app = express();
 const { v4 } = require('uuid');
-// TODO: ADD SHIPPING/BILLING ADDRESS
+
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
@@ -15,10 +15,6 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
-app.get('/', (req, res) => {
-    res.send('it works');
-});
-
 app.post('/payment', (req, res) => {
     const { products, token, total } = req.body;
     console.log('PRODUCT', products);
