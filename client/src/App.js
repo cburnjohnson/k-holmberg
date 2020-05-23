@@ -10,7 +10,6 @@ import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import Alerts from './components/layout/Alerts';
 
-// TODO: REMOVE CART ITEMS AFTER TRANSACTION
 // TODO: SUCCESSFUL ALERT FOR PURCHASE
 // TODO: ALERT IF TOTAL IS $0
 

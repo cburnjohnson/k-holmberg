@@ -13,7 +13,7 @@ const Picture = ({ picture }) => {
         if (!currentPictureIds.includes(picture.id)) {
             addCartItem(picture);
         } else {
-            setAlert('You already have this painting in your cart.');
+            setAlert('error', 'You already have this painting in your cart.');
         }
     };
 
