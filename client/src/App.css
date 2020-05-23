@@ -88,6 +88,10 @@ body {
     background: #dc3545;
 }
 
+.alert-success {
+    background: #28a745;
+}
+
 /* Background Images */
 .paint-bg {
     position: absolute;

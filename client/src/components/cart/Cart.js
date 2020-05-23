@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
 import CartContext from '../../context/cart/cartContext';
+import AlertContext from '../../context/alert/alertContext';
 
 import CartItem from './CartItem';
 import StripeCheckout from 'react-stripe-checkout';
 
 const Cart = () => {
     const { cartItems, closeCart, isOpen, clearCart } = useContext(CartContext);
+    const { setAlert } = useContext(AlertContext);
 
     const makePayment = (token) => {
         const body = {
@@ -30,6 +32,7 @@ const Cart = () => {
                 console.log('RESPONSE', response);
                 const { status } = response;
                 console.log(status);
+                setAlert('success', 'Your purchase has been confirmed.');
                 clearCart();
             })
             .catch((error) => console.log(error));
