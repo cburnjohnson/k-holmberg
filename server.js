@@ -52,8 +52,14 @@ app.post('/payment', (req, res) => {
                 { idempotencyKey }
             );
         })
-        .then((result) => res.status(200).json(result))
-        .catch((err) => console.log(err));
+        .then((result) => {
+            console.log('err is here');
+            console.log(result);
+            res.status(200).json(result);
+        })
+        .catch((err) => {
+            console.log(err);
+        });
 });
 
 // Server static assets in production
