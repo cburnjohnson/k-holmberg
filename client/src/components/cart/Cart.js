@@ -30,6 +30,7 @@ const Cart = () => {
                 console.log('RESPONSE', response);
                 const { status } = response;
                 console.log(status);
+                clearCart();
             })
             .catch((error) => console.log(error));
     };
@@ -82,9 +83,7 @@ const Cart = () => {
                 }
                 shippingAddress
             >
-                <button id='cart-button' onClick={clearCart}>
-                    Checkout
-                </button>
+                <button id='cart-button'>Checkout</button>
             </StripeCheckout>
         </div>
     );
