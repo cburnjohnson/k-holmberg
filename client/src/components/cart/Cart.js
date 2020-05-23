@@ -29,9 +29,6 @@ const Cart = () => {
             body: JSON.stringify(body),
         })
             .then((response) => {
-                console.log('RESPONSE', response);
-                const { status } = response;
-                console.log(status);
                 setAlert('success', 'Your purchase has been confirmed.');
                 clearCart();
             })

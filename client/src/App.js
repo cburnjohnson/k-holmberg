@@ -10,7 +10,6 @@ import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import Alerts from './components/layout/Alerts';
 
-// TODO: SUCCESSFUL ALERT FOR PURCHASE
 // TODO: ALERT IF TOTAL IS $0
 
 function App() {

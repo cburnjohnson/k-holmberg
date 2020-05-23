@@ -21,7 +21,6 @@ app.post('/payment', (req, res) => {
     console.log('TOTAL', total);
 
     const idempotencyKey = v4();
-    console.log(token);
 
     return stripe.customers
         .create({
