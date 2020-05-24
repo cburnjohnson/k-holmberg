@@ -52,13 +52,7 @@ app.post('/payment', (req, res) => {
                 { idempotencyKey }
             );
         })
-        .then((result) => {
-            if (result === undefined) {
-                res.status(400).json({ msg: 'There was an error' });
-            } else {
-                res.status(200).json(result);
-            }
-        })
+        .then((result) => res.status(200).json(result))
         .catch((err) => {
             console.log('actual error');
         });
