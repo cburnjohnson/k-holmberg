@@ -57,7 +57,6 @@ app.post('/payment', async (req, res) => {
         return res.status(200).json(result);
     } catch (err) {
         console.log('ERROR HEREEE');
-        console.log(err);
     }
 });
 
