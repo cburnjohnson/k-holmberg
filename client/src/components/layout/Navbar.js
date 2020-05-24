@@ -1,9 +1,11 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import CartContext from '../../context/cart/cartContext';
+import AlertContext from '../../context/alert/alertContext';
 
 const Navbar = () => {
     const { cartItems, openCart } = useContext(CartContext);
+    const { setAlert } = useContext(AlertContext);
 
     const [pathname, setPathname] = useState(window.location.pathname);
 
@@ -17,7 +19,16 @@ const Navbar = () => {
 
     const galleryLinks = (
         <>
-            <button className='nav-cart' onClick={openCart}>
+            <button
+                className='nav-cart'
+                onClick={() => {
+                    if (cartItems.length < 1) {
+                        setAlert('error', 'Your cart is empty');
+                    } else {
+                        openCart();
+                    }
+                }}
+            >
                 Cart({cartItems.length})
             </button>
         </>
