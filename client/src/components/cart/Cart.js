@@ -29,8 +29,15 @@ const Cart = () => {
             body: JSON.stringify(body),
         })
             .then((response) => {
-                setAlert('success', 'Your purchase has been confirmed.');
-                clearCart();
+                if (response.status !== 200) {
+                    return response.json();
+                } else {
+                    setAlert('success', 'Your purchase has been confirmed.');
+                    clearCart();
+                }
+            })
+            .then((data) => {
+                setAlert('error', data.msg);
             })
             .catch((error) => console.log(error));
     };

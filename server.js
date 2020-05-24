@@ -53,12 +53,14 @@ app.post('/payment', (req, res) => {
             );
         })
         .then((result) => {
-            console.log('err is here');
-            console.log(result);
-            res.status(200).json(result);
+            if (result === undefined) {
+                res.status(400).json({ msg: 'There was an error' });
+            } else {
+                res.status(200).json(result);
+            }
         })
         .catch((err) => {
-            console.log(err);
+            console.log('actual error');
         });
 });
 
