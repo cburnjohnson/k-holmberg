@@ -15,47 +15,48 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
-app.post('/payment', (req, res) => {
+app.post('/payment', async (req, res) => {
     const { products, token, total } = req.body;
     console.log('PRODUCT', products);
     console.log('TOTAL', total);
 
     const idempotencyKey = v4();
 
-    return stripe.customers
-        .create({
+    try {
+        const customer = await stripe.customers.create({
             email: token.email,
             source: token.id,
-        })
-        .then((customer) => {
-            stripe.charges.create(
-                {
-                    amount: total,
-                    currency: 'usd',
-                    customer: customer.id,
-                    receipt_email: token.email,
-                    description: `Purchase of ${products.map(
-                        (product) => product.alt
-                    )}`,
-                    shipping: {
-                        name: token.card.name,
-                        address: {
-                            line1: token.card.address_line1,
-                            line2: token.card.address_line2,
-                            city: token.card.address_city,
-                            state: token.card.address_state,
-                            postal_code: token.card.address_zip,
-                            country: token.card.address_country,
-                        },
+        });
+
+        stripe.charges.create(
+            {
+                amount: total,
+                currency: 'usd',
+                customer: customer.id,
+                receipt_email: token.email,
+                description: `Purchase of ${products.map(
+                    (product) => product.alt
+                )}`,
+                shipping: {
+                    name: token.card.name,
+                    address: {
+                        line1: token.card.address_line1,
+                        line2: token.card.address_line2,
+                        city: token.card.address_city,
+                        state: token.card.address_state,
+                        postal_code: token.card.address_zip,
+                        country: token.card.address_country,
                     },
                 },
-                { idempotencyKey }
-            );
-        })
-        .then((result) => res.status(200).json(result))
-        .catch((err) => {
-            console.log('actual error');
-        });
+            },
+            { idempotencyKey }
+        );
+
+        return res.status(200);
+    } catch (err) {
+        console.log('ERROR HEREEE');
+        console.log(err);
+    }
 });
 
 // Server static assets in production
