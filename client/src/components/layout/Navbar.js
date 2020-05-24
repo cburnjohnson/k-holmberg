@@ -19,7 +19,16 @@ const Navbar = () => {
 
     const galleryLinks = (
         <>
-            <button className='nav-cart' onClick={openCart}>
+            <button
+                className='nav-cart'
+                onClick={() => {
+                    if (cartItems.length < 1) {
+                        setAlert('error', 'Your cart is empty');
+                    } else {
+                        openCart();
+                    }
+                }}
+            >
                 Cart({cartItems.length})
             </button>
         </>
