@@ -57,7 +57,6 @@ app.post('/payment', async (req, res) => {
         return res.status(200).json(result);
     } catch (err) {
         res.status(400).json({ msg: 'An error occurred' });
-        throw new Error('An error occurred');
     }
 });
 

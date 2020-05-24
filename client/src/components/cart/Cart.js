@@ -29,18 +29,17 @@ const Cart = () => {
             body: JSON.stringify(body),
         })
             .then((response) => {
-                console.log(response);
-                if (response.status !== 200) {
-                    return response.json();
+                if (!response.ok) {
+                    throw new Error('An error occurred');
                 } else {
                     setAlert('success', 'Your purchase has been confirmed.');
                     clearCart();
                 }
             })
-            .then((data) => {
-                setAlert('error', data.msg);
-            })
-            .catch((error) => console.log(error));
+            .catch((err) => {
+                setAlert('error', err.message);
+                clearCart();
+            });
     };
 
     return (
