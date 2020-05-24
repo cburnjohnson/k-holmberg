@@ -29,6 +29,7 @@ const Cart = () => {
             body: JSON.stringify(body),
         })
             .then((response) => {
+                console.log(response);
                 if (response.status !== 200) {
                     return response.json();
                 } else {

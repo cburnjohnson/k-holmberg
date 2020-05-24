@@ -28,7 +28,7 @@ app.post('/payment', async (req, res) => {
             source: token.id,
         });
 
-        stripe.charges.create(
+        const result = await stripe.charges.create(
             {
                 amount: total,
                 currency: 'usd',
@@ -52,7 +52,9 @@ app.post('/payment', async (req, res) => {
             { idempotencyKey }
         );
 
-        return res.status(200);
+        console.log(result.json());
+
+        return res.status(200).json(result);
     } catch (err) {
         console.log('ERROR HEREEE');
         console.log(err);
