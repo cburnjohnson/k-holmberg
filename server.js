@@ -17,8 +17,6 @@ app.use(cors());
 // Routes
 app.post('/payment', async (req, res) => {
     const { products, token, total } = req.body;
-    console.log('PRODUCT', products);
-    console.log('TOTAL', total);
 
     const idempotencyKey = v4();
 
@@ -52,10 +50,9 @@ app.post('/payment', async (req, res) => {
             { idempotencyKey }
         );
 
-        console.log(result.json());
-
         return res.status(200).json(result);
     } catch (err) {
+        console.log(err);
         res.status(400).json({ msg: 'An error occurred' });
     }
 });

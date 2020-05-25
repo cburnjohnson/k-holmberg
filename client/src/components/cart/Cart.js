@@ -29,6 +29,7 @@ const Cart = () => {
             body: JSON.stringify(body),
         })
             .then((response) => {
+                console.log(response);
                 if (!response.ok) {
                     throw new Error('An error occurred');
                 } else {
