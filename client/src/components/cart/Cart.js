@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import CartContext from '../../context/cart/cartContext';
 import AlertContext from '../../context/alert/alertContext';
+import PictureContext from '../../context/picture/pictureContext';
 
 import CartItem from './CartItem';
 import StripeCheckout from 'react-stripe-checkout';
@@ -8,6 +9,7 @@ import StripeCheckout from 'react-stripe-checkout';
 const Cart = () => {
     const { cartItems, closeCart, isOpen, clearCart } = useContext(CartContext);
     const { setAlert } = useContext(AlertContext);
+    const { removePicture } = useContext(PictureContext);
 
     const makePayment = (token) => {
         const body = {
@@ -34,6 +36,7 @@ const Cart = () => {
                     throw new Error('An error occurred');
                 } else {
                     setAlert('success', 'Your purchase has been confirmed.');
+                    removePicture(cartItems.map((picture) => picture.id));
                     clearCart();
                 }
             })

@@ -11,6 +11,8 @@ import Wine from '../../images/paintings/wine.jpg';
 import Sunflower from '../../images/paintings/sunflower.jpg';
 import Jellyfish from '../../images/paintings/jellyfish.jpg';
 
+import { REMOVE_PICTURE } from '../types';
+
 const PictureState = (props) => {
     const initialState = {
         pictures: [
@@ -75,8 +77,14 @@ const PictureState = (props) => {
 
     const [state, dispatch] = useReducer(pictureReducer, initialState);
 
+    const removePicture = (pictureIds) => {
+        dispatch({ type: REMOVE_PICTURE, payload: pictureIds });
+    };
+
     return (
-        <PictureContext.Provider value={{ pictures: state.pictures }}>
+        <PictureContext.Provider
+            value={{ pictures: state.pictures, removePicture }}
+        >
             {props.children}
         </PictureContext.Provider>
     );
