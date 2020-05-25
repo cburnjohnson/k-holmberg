@@ -90,6 +90,7 @@ const Cart = () => {
                     }, 0) * 100
                 }
                 shippingAddress
+                billingAddress
             >
                 <button id='cart-button'>Checkout</button>
             </StripeCheckout>
