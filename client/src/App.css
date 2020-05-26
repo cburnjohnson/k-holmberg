@@ -105,6 +105,18 @@ body {
     animation-fill-mode: forwards;
 }
 
+.paint-bg-d {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    -webkit-animation: paint 0.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: paint 0.5s; /* Firefox < 16 */
+    -ms-animation: paint 0.5s; /* Internet Explorer */
+    -o-animation: paint 0.5s; /* Opera < 12.1 */
+    animation: paint 0.5s;
+    animation-fill-mode: forwards;
+}
+
 .paint-bg-m.purple-m {
     left: -50px;
 }
@@ -475,5 +487,41 @@ h2.header-art {
         width: 70%;
         margin: 5rem auto 0 auto;
         padding: 0;
+    }
+
+    .paint-bg-m {
+        display: none;
+    }
+
+    .paint-bg-d {
+        display: initial;
+    }
+
+    .purple-d {
+        left: -5%;
+        top: 425px;
+    }
+
+    .yellow-d {
+        left: -10%;
+        top: 750px;
+        z-index: 1;
+    }
+
+    .blue-d {
+        left: 50%;
+        top: 300px;
+    }
+
+    .green-d {
+        left: 80.97%;
+        bottom: 66.94%;
+    }
+
+    .orange-d {
+        left: 62.97%;
+        right: -2.24%;
+        top: 13.24%;
+        bottom: 66.94%;
     }
 }
