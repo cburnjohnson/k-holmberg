@@ -469,3 +469,11 @@ h2.header-art {
         left: 550px;
     }
 }
+
+@media (min-width: 750px) {
+    .header-home {
+        width: 70%;
+        margin: 5rem auto 0 auto;
+        padding: 0;
+    }
+}
