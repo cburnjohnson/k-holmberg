@@ -548,17 +548,47 @@ h2.header-art {
 @media (min-width: 1300px) {
     .header-home {
         width: 60%;
+        margin-top: 3rem;
+    }
+
+    .header-home h1 {
+        font-size: 12rem;
+    }
+
+    .header-home h2 {
+        font-size: 7rem;
+    }
+
+    .nav {
+        padding: 0.75em 1.75em;
+    }
+
+    .nav-brand a {
+        font-size: 2rem;
+    }
+
+    .nav-links ul li a {
+        font-size: 1.75rem;
     }
 }
 
 @media (min-width: 1550px) {
     .header-home {
-        width: 50%;
+        margin-top: 1rem;
+    }
+
+    .purple-d {
+        left: 0%;
+    }
+
+    .header-home h1 {
+        font-size: 13rem;
+    }
+
+    .header-home h2 {
+        font-size: 8rem;
     }
 }
 
 @media (min-width: 1800px) {
-    .header-home {
-        width: 40%;
-    }
 }
