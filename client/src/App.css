@@ -95,7 +95,6 @@ body {
 /* Background Images */
 .paint-bg {
     position: absolute;
-    left: -50px;
     bottom: -1250px;
     z-index: -1;
     -webkit-animation: paint 0.5s; /* Safari, Chrome and Opera > 12.1 */
@@ -104,6 +103,10 @@ body {
     -o-animation: paint 0.5s; /* Opera < 12.1 */
     animation: paint 0.5s;
     animation-fill-mode: forwards;
+}
+
+.paint-bg.purple {
+    left: -50px;
 }
 
 .paint-bg.blue {
@@ -428,4 +431,41 @@ h2.header-art {
 
 .close-cart:hover {
     color: var(--red-hover);
+}
+
+/* Media Queries */
+@media (min-width: 550px) {
+    .paint-bg.blue {
+        left: 75px;
+    }
+
+    .paint-bg.green {
+        left: 200px;
+    }
+
+    .paint-bg.yellow {
+        left: 325px;
+    }
+
+    .paint-bg.red {
+        left: 450px;
+    }
+}
+
+@media (min-width: 625px) {
+    .paint-bg.blue {
+        left: 100px;
+    }
+
+    .paint-bg.green {
+        left: 250px;
+    }
+
+    .paint-bg.yellow {
+        left: 400px;
+    }
+
+    .paint-bg.red {
+        left: 550px;
+    }
 }
