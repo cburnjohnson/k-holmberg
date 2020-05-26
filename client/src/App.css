@@ -108,7 +108,7 @@ body {
 .paint-bg-d {
     display: none;
     position: absolute;
-    z-index: -1;
+    z-index: -10;
     -webkit-animation: paint 0.5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: paint 0.5s; /* Firefox < 16 */
     -ms-animation: paint 0.5s; /* Internet Explorer */
@@ -505,7 +505,7 @@ h2.header-art {
     .yellow-d {
         left: -10%;
         top: 750px;
-        z-index: 1;
+        z-index: -1;
     }
 
     .blue-d {
@@ -523,5 +523,42 @@ h2.header-art {
         right: -2.24%;
         top: 13.24%;
         bottom: 66.94%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header-home h1 {
+        font-size: 11rem;
+    }
+
+    .header-home h2 {
+        font-size: 6rem;
+    }
+
+    .header-sub {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header-home a {
+        top: 50px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .header-home {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1550px) {
+    .header-home {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .header-home {
+        width: 40%;
     }
 }
