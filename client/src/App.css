@@ -537,11 +537,12 @@ h2.header-art {
 
     .header-sub {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 42% 58%;
     }
 
     .header-home a {
-        top: 50px;
+        top: 40px;
+        margin-left: 1rem;
     }
 }
 
