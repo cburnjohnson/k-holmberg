@@ -195,10 +195,10 @@ body {
 
 @keyframes paint-orange {
     from {
-        opacity: 0;
+        right: -100%;
     }
     to {
-        opacity: 1;
+        right: -1%;
     }
 }
 
@@ -579,29 +579,30 @@ h2.header-art {
     .purple-d {
         left: -100%;
         top: 425px;
+        z-index: -3;
     }
 
     .yellow-d {
         left: -100%;
         top: 750px;
-        z-index: -1;
+        z-index: -5;
     }
 
     .blue-d {
         left: 50%;
         bottom: -100%;
+        z-index: -7;
     }
 
     .green-d {
         left: 80.97%;
         bottom: -75.94%;
+        z-index: -6;
     }
 
     .orange-d {
-        left: 62.97%;
-        right: -2.24%;
+        right: 0;
         top: 13.24%;
-        bottom: 66.94%;
     }
 }
 
