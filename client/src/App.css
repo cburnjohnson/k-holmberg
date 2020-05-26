@@ -195,7 +195,7 @@ body {
 
 @keyframes paint-orange {
     from {
-        right: -100%;
+        right: -125%;
     }
     to {
         right: -1%;
@@ -204,7 +204,7 @@ body {
 
 @keyframes paint-blue {
     from {
-        bottom: -100%;
+        bottom: -125%;
     }
     to {
         bottom: -100px;
@@ -213,7 +213,7 @@ body {
 
 @keyframes paint-purple {
     from {
-        left: -100%;
+        left: -125%;
     }
     to {
         left: -1%;
@@ -222,7 +222,7 @@ body {
 
 @keyframes paint-yellow {
     from {
-        left: -100%;
+        left: -125%;
     }
     to {
         left: -10%;
@@ -577,20 +577,20 @@ h2.header-art {
     }
 
     .purple-d {
-        left: -100%;
+        left: -150%;
         top: 425px;
         z-index: -3;
     }
 
     .yellow-d {
-        left: -100%;
+        left: -160%;
         top: 750px;
         z-index: -5;
     }
 
     .blue-d {
         left: 50%;
-        bottom: -100%;
+        bottom: -125%;
         z-index: -7;
     }
 
