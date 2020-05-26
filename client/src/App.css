@@ -93,7 +93,7 @@ body {
 }
 
 /* Background Images */
-.paint-bg {
+.paint-bg-m {
     position: absolute;
     bottom: -1250px;
     z-index: -1;
@@ -105,26 +105,26 @@ body {
     animation-fill-mode: forwards;
 }
 
-.paint-bg.purple {
+.paint-bg-m.purple-m {
     left: -50px;
 }
 
-.paint-bg.blue {
+.paint-bg-m.blue-m {
     left: 50px;
     animation-delay: 0.5s;
 }
 
-.paint-bg.green {
+.paint-bg-m.green-m {
     left: 150px;
     animation-delay: 1s;
 }
 
-.paint-bg.yellow {
+.paint-bg-m.yellow-m {
     left: 250px;
     animation-delay: 1.5s;
 }
 
-.paint-bg.red {
+.paint-bg-m.red-m {
     left: 350px;
     animation-delay: 2s;
 }
@@ -435,37 +435,37 @@ h2.header-art {
 
 /* Media Queries */
 @media (min-width: 550px) {
-    .paint-bg.blue {
+    .paint-bg-m.blue-m {
         left: 75px;
     }
 
-    .paint-bg.green {
+    .paint-bg-m.green-m {
         left: 200px;
     }
 
-    .paint-bg.yellow {
+    .paint-bg-m.yellow-m {
         left: 325px;
     }
 
-    .paint-bg.red {
+    .paint-bg-m.red-m {
         left: 450px;
     }
 }
 
 @media (min-width: 625px) {
-    .paint-bg.blue {
+    .paint-bg-m.blue-m {
         left: 100px;
     }
 
-    .paint-bg.green {
+    .paint-bg-m.green-m {
         left: 250px;
     }
 
-    .paint-bg.yellow {
+    .paint-bg-m.yellow-m {
         left: 400px;
     }
 
-    .paint-bg.red {
+    .paint-bg-m.red-m {
         left: 550px;
     }
 }
