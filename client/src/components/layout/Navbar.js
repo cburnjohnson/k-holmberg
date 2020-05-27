@@ -1,13 +1,13 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import CartContext from '../../context/cart/cartContext';
 import AlertContext from '../../context/alert/alertContext';
+import PictureContext from '../../context/picture/pictureContext';
 
 const Navbar = () => {
     const { cartItems, openCart } = useContext(CartContext);
     const { setAlert } = useContext(AlertContext);
-
-    const [pathname, setPathname] = useState(window.location.pathname);
+    const { setPathname, pathname } = useContext(PictureContext);
 
     const homeLinks = (
         <>

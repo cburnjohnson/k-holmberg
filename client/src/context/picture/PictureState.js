@@ -11,7 +11,7 @@ import Wine from '../../images/paintings/wine.jpg';
 import Sunflower from '../../images/paintings/sunflower.jpg';
 import Jellyfish from '../../images/paintings/jellyfish.jpg';
 
-import { REMOVE_PICTURE } from '../types';
+import { REMOVE_PICTURE, SET_PATHNAME } from '../types';
 
 const PictureState = (props) => {
     const initialState = {
@@ -73,6 +73,7 @@ const PictureState = (props) => {
                 price: 20,
             },
         ],
+        pathname: window.location.pathname,
     };
 
     const [state, dispatch] = useReducer(pictureReducer, initialState);
@@ -81,9 +82,18 @@ const PictureState = (props) => {
         dispatch({ type: REMOVE_PICTURE, payload: pictureIds });
     };
 
+    const setPathname = (pathname) => {
+        dispatch({ type: SET_PATHNAME, payload: pathname });
+    };
+
     return (
         <PictureContext.Provider
-            value={{ pictures: state.pictures, removePicture }}
+            value={{
+                pictures: state.pictures,
+                pathname: state.pathname,
+                removePicture,
+                setPathname,
+            }}
         >
             {props.children}
         </PictureContext.Provider>
