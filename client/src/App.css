@@ -562,6 +562,11 @@ h2.header-art {
 }
 
 @media (min-width: 750px) {
+    .alert {
+        width: 70%;
+        left: 15%;
+    }
+
     .header-home {
         width: 70%;
         margin: 5rem auto 0 auto;
@@ -607,6 +612,11 @@ h2.header-art {
 }
 
 @media (min-width: 1024px) {
+    .alert {
+        width: 60%;
+        left: 20%;
+    }
+
     .cart-item img {
         max-width: 10%;
     }
@@ -631,6 +641,12 @@ h2.header-art {
 }
 
 @media (min-width: 1300px) {
+    .alert {
+        width: 50%;
+        left: 25%;
+        font-size: 1.25rem;
+    }
+
     #cart-button {
         width: 50%;
     }
@@ -666,6 +682,11 @@ h2.header-art {
 }
 
 @media (min-width: 1550px) {
+    .alert {
+        width: 40%;
+        left: 30%;
+    }
+
     #cart-button {
         width: 40%;
     }
