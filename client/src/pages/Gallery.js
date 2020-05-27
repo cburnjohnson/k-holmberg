@@ -16,7 +16,6 @@ const Gallery = () => {
                 <span className='orange'>R</span> <span className='red'>Y</span>
             </h1>
             <Carousel />
-            <BackgroundImages />
             <Cart />
             <Overlay />
         </div>

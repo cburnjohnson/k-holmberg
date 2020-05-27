@@ -9,8 +9,7 @@ import Navbar from './components/layout/Navbar';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import Alerts from './components/layout/Alerts';
-
-// TODO: ALERT IF TOTAL IS $0
+import BackgroundImages from './components/layout/BackgroundImages';
 
 function App() {
     return (
@@ -29,6 +28,7 @@ function App() {
                                     component={Gallery}
                                 />
                             </Switch>
+                            <BackgroundImages />
                         </div>
                     </Router>
                 </AlertState>
