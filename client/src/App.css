@@ -73,8 +73,8 @@ body {
 
 .alert {
     padding: 0.7rem;
-    color: #333;
-    background: #ddd;
+    color: #ddd;
+    background: #c4c4c4;
     width: 80%;
     border-radius: 10px;
     position: absolute;
@@ -347,6 +347,7 @@ h2.header-art {
     font-size: 4.5rem;
     text-align: center;
     margin-top: 2rem;
+    text-shadow: 1px 1px black;
 }
 
 .picture-carousel {
@@ -629,30 +630,9 @@ h2.header-art {
         font-size: 6rem;
     }
 
-    .header-sub {
-        display: grid;
-        grid-template-columns: 42% 58%;
-    }
-
-    .header-home a {
-        top: 40px;
-        margin-left: 1rem;
-    }
-}
-
-@media (min-width: 1300px) {
-    .alert {
-        width: 50%;
-        left: 25%;
-        font-size: 1.25rem;
-    }
-
-    #cart-button {
-        width: 50%;
-    }
-
     .gallery h1 {
         font-size: 5rem;
+        margin-top: 1.5rem;
     }
 
     .header-home {
@@ -678,6 +658,32 @@ h2.header-art {
 
     .nav-links ul li a {
         font-size: 1.75rem;
+    }
+
+    .nav-cart {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .alert {
+        width: 50%;
+        left: 25%;
+        font-size: 1.25rem;
+    }
+
+    .header-sub {
+        display: grid;
+        grid-template-columns: 42% 58%;
+    }
+
+    .header-home a {
+        top: 40px;
+        margin-left: 1rem;
+    }
+
+    #cart-button {
+        width: 50%;
     }
 }
 
@@ -705,5 +711,22 @@ h2.header-art {
 
     .header-home h2 {
         font-size: 8rem;
+    }
+
+    .nav-brand a {
+        font-size: 2.25rem;
+    }
+
+    .nav-links ul li a {
+        font-size: 2rem;
+    }
+
+    .nav-cart {
+        font-size: 2rem;
+    }
+
+    .gallery h1 {
+        font-size: 6rem;
+        margin-top: 1.25rem;
     }
 }
