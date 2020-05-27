@@ -297,6 +297,11 @@ body {
     font-weight: 400;
     position: relative;
     top: 60px;
+    text-shadow: 1px 1px black;
+}
+
+.header-ln {
+    text-shadow: 1px 1px black;
 }
 
 .header-home h2 {
