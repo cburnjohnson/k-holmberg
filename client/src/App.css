@@ -607,6 +607,10 @@ h2.header-art {
 }
 
 @media (min-width: 1024px) {
+    .cart-item img {
+        max-width: 10%;
+    }
+
     .header-home h1 {
         font-size: 11rem;
     }
@@ -627,6 +631,14 @@ h2.header-art {
 }
 
 @media (min-width: 1300px) {
+    #cart-button {
+        width: 50%;
+    }
+
+    .gallery h1 {
+        font-size: 5rem;
+    }
+
     .header-home {
         width: 60%;
         margin-top: 3rem;
@@ -654,6 +666,14 @@ h2.header-art {
 }
 
 @media (min-width: 1550px) {
+    #cart-button {
+        width: 40%;
+    }
+
+    .cart-item img {
+        max-width: 5%;
+    }
+
     .header-home {
         margin-top: 1rem;
     }
