@@ -502,6 +502,10 @@ h2.header-art {
     overflow-y: auto;
 }
 
+.cart-mobile-space {
+    height: 100px;
+}
+
 .cart-item {
     background-color: #c4c4c4;
     display: flex;
@@ -642,6 +646,10 @@ h2.header-art {
 }
 
 @media (min-width: 1024px) {
+    .cart-mobile-space {
+        display: none;
+    }
+
     .picture-container {
         width: 500px;
     }

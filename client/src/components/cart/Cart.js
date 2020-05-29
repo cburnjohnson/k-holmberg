@@ -112,6 +112,8 @@ const Cart = () => {
             >
                 <button id='cart-button'>Checkout</button>
             </StripeCheckout>
+
+            <div className='cart-mobile-space'></div>
         </div>
     );
 };
