@@ -333,7 +333,6 @@ h2.header-art {
     color: var(--yellow);
     font-size: 2rem;
     position: relative;
-    top: -40px;
     left: 10px;
     transition: 0.3s;
 }

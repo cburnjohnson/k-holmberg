@@ -12,9 +12,11 @@ const Header = () => {
 
             <div className='header-sub'>
                 <h2 className='header-art'>A r t</h2>
-                <Link to='/gallery' onClick={() => setPathname('/gallery')}>
-                    View Art
-                </Link>
+                <div className='header-link'>
+                    <Link to='/gallery' onClick={() => setPathname('/gallery')}>
+                        View Art
+                    </Link>
+                </div>
             </div>
         </header>
     );
