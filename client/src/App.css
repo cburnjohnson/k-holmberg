@@ -321,12 +321,12 @@ body {
 
 .header-home h2 {
     font-family: 'Pacifico', cursive;
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 400;
 }
 
 h2.header-art {
-    font-size: 8rem;
+    font-size: 7rem;
     color: #312f2f;
     opacity: 0;
     text-transform: uppercase;
@@ -363,7 +363,7 @@ h2.header-art {
 
 /* Gallery */
 .gallery h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     text-align: center;
     margin-top: 2rem;
     text-shadow: 1px 1px black;
