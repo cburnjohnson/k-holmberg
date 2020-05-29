@@ -430,7 +430,7 @@ h2.header-art {
     text-transform: uppercase;
     color: var(--pink);
     background-color: #c4c4c4;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
@@ -453,6 +453,7 @@ h2.header-art {
     background-color: #fff;
     z-index: 5;
     transition: all 1s ease;
+    overflow: auto;
 }
 
 #cart.isOpen {
@@ -484,13 +485,12 @@ h2.header-art {
     background-color: var(--pink);
     text-transform: uppercase;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 0.3rem 0;
     cursor: pointer;
     border: 10px solid var(--pink);
     transition: ease 0.3s;
     border-radius: 20px;
-    overflow: auto;
 }
 
 #cart-button:hover {
@@ -566,8 +566,8 @@ h2.header-art {
         font-size: 5rem;
     }
 
-    #cart-button {
-        font-size: 3rem;
+    .picture-button {
+        font-size: 1.5rem;
     }
 
     .picture-container {
