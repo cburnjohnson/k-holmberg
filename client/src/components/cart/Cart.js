@@ -60,7 +60,22 @@ const Cart = () => {
                     onClick={closeCart}
                 ></i>
             </div>
-
+            <div className='cart-demo-msg'>
+                <div>
+                    <span className='demo-msg'>
+                        This is a demo eCommerce site.
+                    </span>
+                    <br />
+                    Use stripe's test card info to simulate a transaction.
+                </div>
+                <div className='test-card-info'>
+                    Card Number: 4242 4242 4242 4242
+                    <br />
+                    Exp: Any future date
+                    <br />
+                    CVC: 123
+                </div>
+            </div>
             <div id='cartItems'>
                 {cartItems &&
                     cartItems.map((cartItem) => (
