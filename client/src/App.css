@@ -393,7 +393,7 @@ h2.header-art {
 }
 
 .picture-container {
-    width: 400px;
+    width: 350px;
     margin: 2rem 1rem 0 1rem;
     position: relative;
     z-index: 3;
@@ -561,6 +561,10 @@ h2.header-art {
 }
 
 @media (min-width: 625px) {
+    .picture-container {
+        width: 400px;
+    }
+
     .paint-bg-m.blue-m {
         left: 100px;
     }
