@@ -1,4 +1,4 @@
-# K. Holmberg Art eCommerce Website
+# K. Holmberg's Art eCommerce Website
 
 ##### Deployed Version: https://kholmberg.herokuapp.com/
 
